@@ -1,0 +1,96 @@
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+body {
+    height: 720px;
+    background-color: hsl(185, 75%, 39%);
+    background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: -350px -600px, right -350px bottom -600px;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+}
+
+.content {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.text {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.card {
+    width: 350px;
+    margin: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.158), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    background-image: url("../images/bg-pattern-card.svg");
+    background-repeat: no-repeat;
+    background-color: white;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding-top: 90px;
+}
+
+img {
+    border-radius: 50%;
+    border: solid 5px white;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+p {
+    text-align: center;
+    color: hsl(0, 0%, 59%);
+}
+
+.basic-info p {
+    line-height: 1.6;
+}
+
+b {
+    color: hsl(229, 23%, 23%);
+}
+
+span {
+    font-size: 15px;
+}
+
+.satistics {
+    display: table;
+    width: 100%;
+    border-top: solid hsl(0, 0%, 80%) 1px;
+}
+
+.followers, .likes, .photos {
+    display: table-cell;
+    vertical-align: middle;
+    width: calc(100% / 3);
+    height: 90px;
+}
+
+.satistics p {
+    margin: 0;
+}
+
+.satistics span {
+    font-size: 10px;
+    padding-top: 10px;
+}
+
+@media only screen and (max-width: 375px) {
+    body {
+        background-position: -750px -550px, right -750px bottom -550px;
+    }
+}
